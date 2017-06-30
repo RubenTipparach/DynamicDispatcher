@@ -4,7 +4,11 @@ import './index.css';
 import './App.css';
 import LoginForm from './LoginForm.js';
 import RegistrationForm from './Registration/RegistrationForm.js';
-import { Layout, Menu, Icon, Breadcrumb } from 'antd';
+
+import MapView from './Map/MapView.js';
+import ListView from './ListView/ListView.js';
+
+import { Layout, Menu, Icon, Breadcrumb, Card } from 'antd';
 import registerServiceWorker from './registerServiceWorker';
 
 import enUS from 'antd/lib/locale-provider/en_US';
@@ -17,31 +21,6 @@ const { SubMenu } = Menu;
 
 const { Header, Content, Footer, Sider } = Layout;
 
-const TCPView = () => (
-    <div>
-        <Layout className="layout" >
-            <Header>Technical Certification Program</Header>
-            <Layout>
-                <Sider>left sidebar</Sider>
-                <Content>main content</Content>
-                <Sider>right sidebar</Sider>
-            </Layout>
-            <Footer>footer</Footer>
-        </Layout>
-    </div>
-);
-
-const ESCView = () => (
-    <Layout>
-        <Header>Erosion and Sediment Control Certification Program</Header>
-        <Layout>
-            <Sider>left sidebar</Sider>
-            <Content>main content</Content>
-            <Sider>right sidebar</Sider>
-        </Layout>
-        <Footer>footer</Footer>
-    </Layout>
-)
 
 let routerStuff =
     <div>
@@ -57,11 +36,11 @@ let routerStuff =
                 <Menu.Item key="register">
                     <Link to="/register">Register</Link>
                 </Menu.Item>
-                <Menu.Item key="tcp">
-                    <Link to="/tcp">TCP</Link>
+                <Menu.Item key="list">
+                    <Link to="/list">Employees</Link>
                     </Menu.Item>
-                <Menu.Item key="ESC">
-                    <Link to="/esc">ESC</Link>
+                <Menu.Item key="map">
+                    <Link to="/map">Map</Link>
                 </Menu.Item>
             </Menu>
 
@@ -69,8 +48,8 @@ let routerStuff =
 
             <Route path="/Login" component={LoginForm} />
             <Route path="/register/" component={RegistrationForm} />
-            <Route path="/tcp/" component={TCPView} />
-            <Route path="/esc/" component={ESCView} />
+            <Route path="/list/" component={ListView} />
+            <Route path="/map/" component={MapView} />
             <Route path="/main/" component={main} />
         </div>
     </Router></div>;

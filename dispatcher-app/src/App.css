@@ -10,6 +10,14 @@
     float: left;
 }
 
+.mapStyle {
+    width: 900px;
+    height: 700px;
+    z-index: 0;
+    margin: auto;
+    /*position: absolute;*/
+}
+
 /* Main Layout page junk */
 .layout {
     display: block;
@@ -37,4 +45,39 @@
 
 #components-form-demo-normal-login .login-form-button {
     width: 100%;
+}
+
+.stanardCard {
+    width: 960px;
+    margin: auto;
+    height: 800px;
+    overflow: auto;
+    margin-top: 40px;
+}
+
+
+.bigCard {
+    width: 1200px;
+    margin: auto;
+    height: 840px;
+    overflow: auto;
+    margin-top: 40px;
+}
+
+
+/* List View CSS */
+.custom-filter-dropdown {
+    padding: 8px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+}
+
+.custom-filter-dropdown input {
+    width: 130px;
+    margin-right: 8px;
+}
+
+.highlight {
+    color: #f50;
 }

@@ -156,7 +156,7 @@ class RegistrationForm extends React.Component {
             title: 'Employee Info',
             content: this.secondPage(),
         }, {
-                title: 'Register Classes',
+                title: 'Daily Schedule',
                 content: this.thirdPage(),
         }];
 

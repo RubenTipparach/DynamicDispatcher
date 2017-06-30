@@ -32,7 +32,7 @@ class LoginForm extends React.Component {
         const { getFieldDecorator } = this.props.form;
 
         return (
-            <Card title="Login" style={{ width: 400, margin: 'auto', marginTop: 20 }}>
+            <Card title="Login" style={{ width: 400, margin: 'auto', marginTop: 40 }}>
                 <Form onSubmit={this.handleSubmit} className="login-form">
                     <FormItem>
                         {getFieldDecorator('userName', {
