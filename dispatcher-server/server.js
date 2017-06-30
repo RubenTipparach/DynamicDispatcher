@@ -4,17 +4,16 @@ var express = require('express'),
     port    = parseInt(process.env.PORT, 10);
 
 var bodyParser = require('body-parser');
-// ACTIVATE CORS!
 var cors = require('cors');
 
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 var colors = require('colors');
 var strFormat = require('string-format');
-var sql = require('mssql');
+//var sql = require('mssql');
+//var sqlServer = require('./sqllib/sqlserver.js');
 
 var logger = require('./logger.js');
-var sqlServer = require('./sqllib/sqlserver.js');
 var config = require('./config.json');
 
 logger.level = 'error';
