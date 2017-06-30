@@ -8,9 +8,15 @@ import '../App.css';
 class MapView extends React.Component {
     render() {
         return (
-            <Card title="Route Planner" className="bigCard">
-                <div id="map" className="mapStyle"></div>
-            </Card>);
+			<div>
+				<div id="map" className="mapStyle"></div>
+
+				<Card title="Route Planner" className="smallCard" >
+					<br />
+					...
+					<br />
+				</Card>
+			</div>);
     }
 
     componentDidMount()
