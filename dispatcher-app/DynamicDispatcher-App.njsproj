@@ -1,0 +1,228 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>DynamicDispatcher</Name>
+    <RootNamespace>DynamicDispatcher</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>5729db0c-9d36-4937-b954-58591e36945e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="public\dist\components\accordion.css" />
+    <Content Include="public\dist\components\accordion.min.css" />
+    <Content Include="public\dist\components\ad.css" />
+    <Content Include="public\dist\components\ad.min.css" />
+    <Content Include="public\dist\components\breadcrumb.css" />
+    <Content Include="public\dist\components\breadcrumb.min.css" />
+    <Content Include="public\dist\components\button.css" />
+    <Content Include="public\dist\components\button.min.css" />
+    <Content Include="public\dist\components\card.css" />
+    <Content Include="public\dist\components\card.min.css" />
+    <Content Include="public\dist\components\checkbox.css" />
+    <Content Include="public\dist\components\checkbox.min.css" />
+    <Content Include="public\dist\components\comment.css" />
+    <Content Include="public\dist\components\comment.min.css" />
+    <Content Include="public\dist\components\container.css" />
+    <Content Include="public\dist\components\container.min.css" />
+    <Content Include="public\dist\components\dimmer.css" />
+    <Content Include="public\dist\components\dimmer.min.css" />
+    <Content Include="public\dist\components\divider.css" />
+    <Content Include="public\dist\components\divider.min.css" />
+    <Content Include="public\dist\components\dropdown.css" />
+    <Content Include="public\dist\components\dropdown.min.css" />
+    <Content Include="public\dist\components\embed.css" />
+    <Content Include="public\dist\components\embed.min.css" />
+    <Content Include="public\dist\components\feed.css" />
+    <Content Include="public\dist\components\feed.min.css" />
+    <Content Include="public\dist\components\flag.css" />
+    <Content Include="public\dist\components\flag.min.css" />
+    <Content Include="public\dist\components\form.css" />
+    <Content Include="public\dist\components\form.min.css" />
+    <Content Include="public\dist\components\grid.css" />
+    <Content Include="public\dist\components\grid.min.css" />
+    <Content Include="public\dist\components\header.css" />
+    <Content Include="public\dist\components\header.min.css" />
+    <Content Include="public\dist\components\icon.css" />
+    <Content Include="public\dist\components\icon.min.css" />
+    <Content Include="public\dist\components\image.css" />
+    <Content Include="public\dist\components\image.min.css" />
+    <Content Include="public\dist\components\input.css" />
+    <Content Include="public\dist\components\input.min.css" />
+    <Content Include="public\dist\components\item.css" />
+    <Content Include="public\dist\components\item.min.css" />
+    <Content Include="public\dist\components\label.css" />
+    <Content Include="public\dist\components\label.min.css" />
+    <Content Include="public\dist\components\list.css" />
+    <Content Include="public\dist\components\list.min.css" />
+    <Content Include="public\dist\components\loader.css" />
+    <Content Include="public\dist\components\loader.min.css" />
+    <Content Include="public\dist\components\menu.css" />
+    <Content Include="public\dist\components\menu.min.css" />
+    <Content Include="public\dist\components\message.css" />
+    <Content Include="public\dist\components\message.min.css" />
+    <Content Include="public\dist\components\modal.css" />
+    <Content Include="public\dist\components\modal.min.css" />
+    <Content Include="public\dist\components\nag.css" />
+    <Content Include="public\dist\components\nag.min.css" />
+    <Content Include="public\dist\components\popup.css" />
+    <Content Include="public\dist\components\popup.min.css" />
+    <Content Include="public\dist\components\progress.css" />
+    <Content Include="public\dist\components\progress.min.css" />
+    <Content Include="public\dist\components\rail.css" />
+    <Content Include="public\dist\components\rail.min.css" />
+    <Content Include="public\dist\components\rating.css" />
+    <Content Include="public\dist\components\rating.min.css" />
+    <Content Include="public\dist\components\reset.css" />
+    <Content Include="public\dist\components\reset.min.css" />
+    <Content Include="public\dist\components\reveal.css" />
+    <Content Include="public\dist\components\reveal.min.css" />
+    <Content Include="public\dist\components\search.css" />
+    <Content Include="public\dist\components\search.min.css" />
+    <Content Include="public\dist\components\segment.css" />
+    <Content Include="public\dist\components\segment.min.css" />
+    <Content Include="public\dist\components\shape.css" />
+    <Content Include="public\dist\components\shape.min.css" />
+    <Content Include="public\dist\components\sidebar.css" />
+    <Content Include="public\dist\components\sidebar.min.css" />
+    <Content Include="public\dist\components\site.css" />
+    <Content Include="public\dist\components\site.min.css" />
+    <Content Include="public\dist\components\statistic.css" />
+    <Content Include="public\dist\components\statistic.min.css" />
+    <Content Include="public\dist\components\step.css" />
+    <Content Include="public\dist\components\step.min.css" />
+    <Content Include="public\dist\components\sticky.css" />
+    <Content Include="public\dist\components\sticky.min.css" />
+    <Content Include="public\dist\components\tab.css" />
+    <Content Include="public\dist\components\tab.min.css" />
+    <Content Include="public\dist\components\table.css" />
+    <Content Include="public\dist\components\table.min.css" />
+    <Content Include="public\dist\components\transition.css" />
+    <Content Include="public\dist\components\transition.min.css" />
+    <Content Include="public\dist\semantic.css" />
+    <Content Include="public\dist\semantic.min.css" />
+    <Content Include="public\dist\themes\basic\assets\fonts\icons.eot" />
+    <Content Include="public\dist\themes\basic\assets\fonts\icons.svg" />
+    <Content Include="public\dist\themes\basic\assets\fonts\icons.ttf" />
+    <Content Include="public\dist\themes\basic\assets\fonts\icons.woff" />
+    <Content Include="public\dist\themes\default\assets\fonts\icons.eot" />
+    <Content Include="public\dist\themes\default\assets\fonts\icons.svg" />
+    <Content Include="public\dist\themes\default\assets\fonts\icons.ttf" />
+    <Content Include="public\dist\themes\default\assets\fonts\icons.woff" />
+    <Content Include="public\dist\themes\default\assets\fonts\icons.woff2" />
+    <Content Include="public\dist\themes\default\assets\images\flags.png" />
+    <Content Include="public\dist\themes\github\assets\fonts\octicons-local.ttf" />
+    <Content Include="public\dist\themes\github\assets\fonts\octicons.svg" />
+    <Content Include="public\dist\themes\github\assets\fonts\octicons.ttf" />
+    <Content Include="public\dist\themes\github\assets\fonts\octicons.woff" />
+    <Content Include="public\dist\themes\material\assets\fonts\icons.eot" />
+    <Content Include="public\dist\themes\material\assets\fonts\icons.svg" />
+    <Content Include="public\dist\themes\material\assets\fonts\icons.ttf" />
+    <Content Include="public\dist\themes\material\assets\fonts\icons.woff" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\index.html" />
+    <Content Include="public\manifest.json" />
+    <Content Include="src\App.css" />
+    <Content Include="src\index.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="public\dist\" />
+    <Folder Include="public\dist\components\" />
+    <Folder Include="public\dist\themes\" />
+    <Folder Include="public\dist\themes\basic\" />
+    <Folder Include="public\dist\themes\basic\assets\" />
+    <Folder Include="public\dist\themes\basic\assets\fonts\" />
+    <Folder Include="public\dist\themes\default\" />
+    <Folder Include="public\dist\themes\default\assets\" />
+    <Folder Include="public\dist\themes\default\assets\fonts\" />
+    <Folder Include="public\dist\themes\default\assets\images\" />
+    <Folder Include="public\dist\themes\github\" />
+    <Folder Include="public\dist\themes\github\assets\" />
+    <Folder Include="public\dist\themes\github\assets\fonts\" />
+    <Folder Include="public\dist\themes\material\" />
+    <Folder Include="public\dist\themes\material\assets\" />
+    <Folder Include="public\dist\themes\material\assets\fonts\" />
+    <Folder Include="src\" />
+    <Folder Include="src\ListView\" />
+    <Folder Include="src\Map\" />
+    <Folder Include="src\Registration\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="public\dist\components\accordion.js" />
+    <Compile Include="public\dist\components\accordion.min.js" />
+    <Compile Include="public\dist\components\api.js" />
+    <Compile Include="public\dist\components\api.min.js" />
+    <Compile Include="public\dist\components\checkbox.js" />
+    <Compile Include="public\dist\components\checkbox.min.js" />
+    <Compile Include="public\dist\components\dimmer.js" />
+    <Compile Include="public\dist\components\dimmer.min.js" />
+    <Compile Include="public\dist\components\dropdown.js" />
+    <Compile Include="public\dist\components\dropdown.min.js" />
+    <Compile Include="public\dist\components\embed.js" />
+    <Compile Include="public\dist\components\embed.min.js" />
+    <Compile Include="public\dist\components\form.js" />
+    <Compile Include="public\dist\components\form.min.js" />
+    <Compile Include="public\dist\components\modal.js" />
+    <Compile Include="public\dist\components\modal.min.js" />
+    <Compile Include="public\dist\components\nag.js" />
+    <Compile Include="public\dist\components\nag.min.js" />
+    <Compile Include="public\dist\components\popup.js" />
+    <Compile Include="public\dist\components\popup.min.js" />
+    <Compile Include="public\dist\components\progress.js" />
+    <Compile Include="public\dist\components\progress.min.js" />
+    <Compile Include="public\dist\components\rating.js" />
+    <Compile Include="public\dist\components\rating.min.js" />
+    <Compile Include="public\dist\components\search.js" />
+    <Compile Include="public\dist\components\search.min.js" />
+    <Compile Include="public\dist\components\shape.js" />
+    <Compile Include="public\dist\components\shape.min.js" />
+    <Compile Include="public\dist\components\sidebar.js" />
+    <Compile Include="public\dist\components\sidebar.min.js" />
+    <Compile Include="public\dist\components\site.js" />
+    <Compile Include="public\dist\components\site.min.js" />
+    <Compile Include="public\dist\components\state.js" />
+    <Compile Include="public\dist\components\state.min.js" />
+    <Compile Include="public\dist\components\sticky.js" />
+    <Compile Include="public\dist\components\sticky.min.js" />
+    <Compile Include="public\dist\components\tab.js" />
+    <Compile Include="public\dist\components\tab.min.js" />
+    <Compile Include="public\dist\components\transition.js" />
+    <Compile Include="public\dist\components\transition.min.js" />
+    <Compile Include="public\dist\components\visibility.js" />
+    <Compile Include="public\dist\components\visibility.min.js" />
+    <Compile Include="public\dist\semantic.js" />
+    <Compile Include="public\dist\semantic.min.js" />
+    <Compile Include="src\index.js" />
+    <Compile Include="src\ListView\ListView.js" />
+    <Compile Include="src\LoginForm.js" />
+    <Compile Include="src\Map\MapView.js" />
+    <Compile Include="src\registerServiceWorker.js" />
+    <Compile Include="src\Registration\RegisterClasses.js" />
+    <Compile Include="src\Registration\RegistrationForm.js" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>

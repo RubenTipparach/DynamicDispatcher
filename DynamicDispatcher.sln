@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "DynamicDispatcher-App", "dispatcher-app\DynamicDispatcher-App.njsproj", "{5729DB0C-9D36-4937-B954-58591E36945E}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "DynamicDispatcher-Server", "dispatcher-server\DynamicDispatcher-Server.njsproj", "{BF393647-A324-4071-934D-0E4439A86B9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5729DB0C-9D36-4937-B954-58591E36945E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5729DB0C-9D36-4937-B954-58591E36945E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5729DB0C-9D36-4937-B954-58591E36945E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5729DB0C-9D36-4937-B954-58591E36945E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF393647-A324-4071-934D-0E4439A86B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF393647-A324-4071-934D-0E4439A86B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF393647-A324-4071-934D-0E4439A86B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF393647-A324-4071-934D-0E4439A86B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

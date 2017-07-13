@@ -51,3 +51,10 @@ app.post('/comms', (req, res) =>
 
 	res.send("blah");
 });
+
+
+
+app.get('/stuff', (req, res) =>
+{	
+	res.send("blasdgfdgdgfdgvh");
+});
